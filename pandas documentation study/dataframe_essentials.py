@@ -19,7 +19,6 @@ df = pd.DataFrame(
 
 print(df)
 
-
 """ Acessing DataFrame columns (Series) """
 
 name_column = df["Name"]
@@ -28,7 +27,6 @@ sex_column = df["Sex"]
 
 #  When selecting a single column from a DataFrame, the result is a Series object
 print(name_column, age_column, sex_column, sep='\n\n')
-
 
 """ Creating a Series (column) """
 
@@ -39,7 +37,6 @@ sex = pd.Series(sex for sex in ('Male', 'Female'))
 print(name)
 print(ages)
 print(sex)
-
 
 """ Some DataFrame methods """
 
