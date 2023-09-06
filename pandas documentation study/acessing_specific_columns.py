@@ -3,7 +3,7 @@ import pandas as pd
 titanic = pd.read_csv("./databases/titanic.csv")
 
 
-""" Acessing specific columns """
+""" Acessing specific columns (Series) """
 
 # A pandas Series is One-Dimensional and only the number of rows is returned
 ages = titanic["Age"]
@@ -13,7 +13,7 @@ print(ages.head(), f"\nType of a single column object: {type(ages)}\n")
 age_sex = titanic[["Age", "Sex"]]
 print(age_sex.head(), '\n')
 
-# To know how many columns and rows have in table
+# To know how many columns and rows have in table use shape DataFrame attribute
 lines, columns = age_sex.shape
 print(f"Lines of age_sex dataframe: {lines}")
 print(f"Columns of age_sex dataframe: {columns}")
