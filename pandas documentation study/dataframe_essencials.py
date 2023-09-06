@@ -1,10 +1,10 @@
-# conventionally pandas is imported as pd
+# Conventionally pandas is imported as pd
 import pandas as pd
 
-""" Visualization of the DataFrame """
+""" DataFrame Visualization """
 
 # When using a dictionary of lists, the dictionary keys will be
-# used as column headers and the values in each list as DataFrame columns
+# used as column headers and the values in each list as DataFrame rows
 df = pd.DataFrame(
     {
         "Name": [
@@ -20,7 +20,7 @@ df = pd.DataFrame(
 print(df)
 
 
-""" Acessing DataFrame Columns (Series) """
+""" Acessing DataFrame columns (Series) """
 
 name_column = df["Name"]
 age_column = df["Age"]
@@ -30,9 +30,9 @@ sex_column = df["Sex"]
 print(name_column, age_column, sex_column, sep='\n\n')
 
 
-""" Creating a Series (Column) """
+""" Creating a Series (column) """
 
-name = pd.Series("Gustavo Borges Morales".split(), name="Name")
+name = pd.Series("A B C".split(), name="Division")
 ages = pd.Series([17, 18, 19], name="Age")
 sex = pd.Series(sex for sex in ('Male', 'Female'))
 
@@ -41,7 +41,7 @@ print(ages)
 print(sex)
 
 
-""" Some DataFrame Methods """
+""" Some DataFrame methods """
 
 print("\nMax in Age Column/Series", age_column.max(), sep='\n')
 print(ages.max())
